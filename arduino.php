@@ -1,5 +1,13 @@
 <?php
-
+# Copyright (c) 2016 by German Bernhardt
+# E-mail: <german.bernhardt@gmail.com>
+# Description: Conecta via USB con ARDUINO utilizando php_wapi.dll
+#              basicamente esta pensado para ser utilizado en CNC, Impresoras 3D, etc...
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License.
+#
 function wait(){
  while(true){
   $data=wapi_serial_read(1);
